@@ -7,7 +7,7 @@ pipeline{
                  withMaven(maven : 'maven_3_6_3'){
                      sh 'pwd'
                      sh 'echo $WORKSPACE'
-                     sh 'mvn -f $WORKSPACE/app clean install'
+                     sh 'mvn -f $WORKSPACE/app clean compile'
                      
                      
                  }
